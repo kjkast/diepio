@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cntyp8mn51wbx"]
+
+[ext_resource type="Texture2D" uid="uid://gx1lavsux862" path="res://assets/bg/space-background.png" id="1_ot634"]
+[ext_resource type="PackedScene" uid="uid://bgimkqyjrr17j" path="res://scenes/player/player.tscn" id="2_xvrq7"]
+
+[node name="test" type="Node2D"]
+
+[node name="Parallax2D" type="Parallax2D" parent="."]
+repeat_size = Vector2(1152, 648)
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D"]
+texture = ExtResource("1_ot634")
+
+[node name="Player" parent="." instance=ExtResource("2_xvrq7")]
